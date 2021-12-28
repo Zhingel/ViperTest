@@ -15,7 +15,7 @@ protocol AboutConfiguratorProtocol: AnyObject {
 class AboutConfigurator: AboutConfiguratorProtocol {
     
     func configure(with viewController: AboutViewController) {
-        let presenter = AboutPresenter(view: viewController as! AboutViewProtocol)
+        let presenter = AboutPresenter(view: viewController as AboutViewProtocol)
         let interactor = AboutInteractor(presenter: presenter)
         let router = AboutRouter(viewController: viewController)
         
