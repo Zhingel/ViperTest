@@ -15,6 +15,9 @@
 		EEC20E76277B44200044AEFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC20E74277B44200044AEFF /* LaunchScreen.storyboard */; };
 		EEC20E7E277B445B0044AEFF /* AboutConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC20E7D277B445B0044AEFF /* AboutConfigurator.swift */; };
 		EEC20E80277B45CC0044AEFF /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC20E7F277B45CC0044AEFF /* AboutPresenter.swift */; };
+		EEC20E83277B80370044AEFF /* AboutIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC20E82277B80370044AEFF /* AboutIteractor.swift */; };
+		EEC20E85277B82980044AEFF /* AboutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC20E84277B82980044AEFF /* AboutRouter.swift */; };
+		EEC20E87277B82BE0044AEFF /* ServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC20E86277B82BE0044AEFF /* ServerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		EEC20E77277B44200044AEFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC20E7D277B445B0044AEFF /* AboutConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutConfigurator.swift; sourceTree = "<group>"; };
 		EEC20E7F277B45CC0044AEFF /* AboutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPresenter.swift; sourceTree = "<group>"; };
+		EEC20E82277B80370044AEFF /* AboutIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutIteractor.swift; sourceTree = "<group>"; };
+		EEC20E84277B82980044AEFF /* AboutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutRouter.swift; sourceTree = "<group>"; };
+		EEC20E86277B82BE0044AEFF /* ServerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 				EEC20E6D277B441E0044AEFF /* AboutViewController.swift */,
 				EEC20E7D277B445B0044AEFF /* AboutConfigurator.swift */,
 				EEC20E7F277B45CC0044AEFF /* AboutPresenter.swift */,
+				EEC20E84277B82980044AEFF /* AboutRouter.swift */,
+				EEC20E86277B82BE0044AEFF /* ServerService.swift */,
+				EEC20E82277B80370044AEFF /* AboutIteractor.swift */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -155,7 +164,10 @@
 				EEC20E7E277B445B0044AEFF /* AboutConfigurator.swift in Sources */,
 				EEC20E6E277B441E0044AEFF /* AboutViewController.swift in Sources */,
 				EEC20E6A277B441E0044AEFF /* AppDelegate.swift in Sources */,
+				EEC20E83277B80370044AEFF /* AboutIteractor.swift in Sources */,
+				EEC20E85277B82980044AEFF /* AboutRouter.swift in Sources */,
 				EEC20E80277B45CC0044AEFF /* AboutPresenter.swift in Sources */,
+				EEC20E87277B82BE0044AEFF /* ServerService.swift in Sources */,
 				EEC20E6C277B441E0044AEFF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

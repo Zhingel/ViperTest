@@ -8,13 +8,19 @@
 import Foundation
 import UIKit
 
-protocol AboutConfiguratorProtocol {
+protocol AboutConfiguratorProtocol: AnyObject {
     func configure(with ViewController: AboutViewController)
 }
 
 class AboutConfigurator: AboutConfiguratorProtocol {
-    func configure(with ViewController: AboutViewController) {
-        //
-    }
     
+    func configure(with viewController: AboutViewController) {
+        let presenter = AboutPresenter(view: viewController as! AboutViewProtocol)
+        let interactor = AboutInteractor(presenter: presenter)
+        let router = AboutRouter(viewController: viewController)
+        
+        viewController.presenter = presenter
+        presenter.interactor = interactor
+        presenter.router = router
+    }
 }

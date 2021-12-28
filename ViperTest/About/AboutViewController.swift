@@ -7,11 +7,19 @@
 
 import UIKit
 
+
+protocol AboutViewProtocol: AnyObject {
+    func setUrlButtonTitle(with title: String)
+}
+
 class AboutViewController: UIViewController {
+    var presenter: AboutPresenterProtocol!
+    let configurator: AboutConfiguratorProtocol = AboutConfigurator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configurator.configure(with: self)
+        presenter.configureView()
     }
 
 
